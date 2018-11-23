@@ -4,17 +4,25 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="top|center"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        />
+
     <EditText
         android:id="@+id/sessionid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Enter Session ID"/>
+        android:hint="Enter Session ID" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter"
         android:onClick="entersession"
-        />
+        android:text="Enter" />
 
 </LinearLayout>
